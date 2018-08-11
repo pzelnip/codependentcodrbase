@@ -1,5 +1,7 @@
 # Codependent Codr Base Image
 
+[![Build Status](https://travis-ci.com/pzelnip/codependentcodrbase.svg?branch=master)](https://travis-ci.com/pzelnip/codependentcodrbase)
+
 This is the base Docker image that I use for my blog.
 
 The repo for that is more interesting and you can find it at:
