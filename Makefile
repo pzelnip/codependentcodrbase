@@ -13,3 +13,8 @@ dockerpush:
 	docker push $(USER_NAME)/$(SITE_NAME):$(SHA)
 
 deploy: dockerbuild dockerpush
+
+clean:
+	docker images | grep $(SITE_NAME) | awk {'print $3'} | xargs docker rmi
+
+.PHONY: dockerbuild dockerpush deploy
