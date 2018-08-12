@@ -1,0 +1,10 @@
+update: all
+
+schedule: "every day"
+
+branch: master
+
+label_prs: pyup
+
+assignees:
+  - pzelnip
