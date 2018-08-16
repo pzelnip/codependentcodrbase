@@ -8,6 +8,9 @@ services:
 script:
 - make deploy
 
+after_success:
+- curl -s -X POST  -H "Content-Type: application/json" -H "Accept: application/json" -H "Travis-API-Version: 3" -H "Authorization: token $TRAVIS_TOKEN" -d '{ "request": { "branch":"master" }}' https://api.travis-ci.com/repo/pzelnip%2Fwww.codependentcodr.com/requests
+
 branches:
   only:
   - master
