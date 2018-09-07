@@ -1,6 +1,6 @@
 autopep8==1.4
 awscli==1.16.9
-bandit==1.5.0
+bandit==1.5.1
 black==18.6b4
 boto3==1.8.8
 flake8==3.5.0
