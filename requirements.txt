@@ -3,7 +3,7 @@ awscli==1.16.40
 bandit==1.5.1
 black==18.9b0
 boto3==1.9.30
-flake8==3.5.0
+flake8==3.6.0
 Markdown==3.0.1
 pelican==3.7.1
 pydocstyle==3.0.0
