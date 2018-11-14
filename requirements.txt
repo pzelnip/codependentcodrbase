@@ -2,7 +2,7 @@ autopep8==1.4.3
 awscli==1.16.54
 bandit==1.5.1
 black==18.9b0
-boto3==1.9.43
+boto3==1.9.44
 flake8==3.6.0
 Markdown==3.0.1
 pelican==3.7.1
