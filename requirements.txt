@@ -1,11 +1,11 @@
 autopep8==1.4.3
-awscli==1.16.61
+awscli==1.16.62
 bandit==1.5.1
 black==18.9b0
-boto3==1.9.51
+boto3==1.9.52
 flake8==3.6.0
 Markdown==3.0.1
 pelican==4.0.0
 pydocstyle==3.0.0
-pylint==2.2.0
+pylint==2.2.1
 safety==1.8.4
