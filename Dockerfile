@@ -19,6 +19,7 @@ RUN npm install -g markdownlint-cli
 
 # needed for Pylint 2.0.0
 COPY requirements.txt /build/requirements.txt
+COPY requirements-float.txt /build/requirements-float.txt
 
 # Note that these 3 commands have to be combined to save on built
 # image size.  If we separate into multiple Docker commands then
@@ -27,5 +28,6 @@ COPY requirements.txt /build/requirements.txt
 # With this all as one command I found I saved over 100MB on the final
 # built image.
 RUN apk add --no-cache --update python3-dev gcc build-base && \
+    pip3 install -r /build/requirements-float.txt && \
     pip3 install -r /build/requirements.txt && \
     apk del python3-dev gcc build-base
