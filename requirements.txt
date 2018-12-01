@@ -3,7 +3,7 @@ bandit==1.5.1
 black==18.9b0
 flake8==3.6.0
 Markdown==3.0.1
-pelican==4.0.0
+pelican==4.0.1
 pydocstyle==3.0.0
 pylint==2.2.2
 safety==1.8.4
