@@ -8,3 +8,9 @@ label_prs: pyup
 
 assignees:
   - pzelnip
+
+
+requirements:
+  - requirements/requirements-float.txt:
+    update: False
+    pin: False
