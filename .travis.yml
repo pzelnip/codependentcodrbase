@@ -10,7 +10,7 @@ script:
 
 branches:
   only:
-  - master
+  - mainline
 
 notifications:
   email: false
