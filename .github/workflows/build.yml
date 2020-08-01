@@ -23,8 +23,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run Docker Build
       run: docker build -t codependentcodrbase:latest .
-      
+
     # Runs a single command using the runners shell
     - name: Run Safety
-      run: docker run -it --rm codependentcodrbase:latest safety check -r /build/requirements.txt --full-report
-      
+      run: docker run --rm codependentcodrbase:latest safety check -r /build/requirements.txt --full-report
