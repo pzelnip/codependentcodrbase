@@ -7,3 +7,4 @@ pelican==4.0.0
 pydocstyle==3.0.0
 pylint==2.5.0
 safety==1.8.7
+Django==2.0.0
