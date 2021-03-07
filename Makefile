@@ -15,10 +15,7 @@ dockerpush:
 	docker push $(USER_NAME)/$(SITE_NAME):latest
 	docker push $(USER_NAME)/$(SITE_NAME):$(SHA)
 
-triggerdownstream:
-	curl -s -X POST  -H "Content-Type: application/json" -H "Accept: application/json" -H "Travis-API-Version: 3" -H "Authorization: token $(TRAVIS_TOKEN)" -d '{ "request": { "branch":"mainline" }}' https://api.travis-ci.com/repo/pzelnip%2Fwww.codependentcodr.com/requests
-
-deploy: dockerbuild safety dockerpush triggerdownstream
+deploy: dockerbuild safety dockerpush
 
 clean:
 	docker images | grep $(SITE_NAME) | awk {'print $3'} | xargs docker rmi
