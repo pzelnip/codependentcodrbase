@@ -1,6 +1,6 @@
 # Codependent Codr Base Image
 
-[![Build Status](https://travis-ci.com/pzelnip/codependentcodrbase.svg?branch=mainline)](https://travis-ci.com/pzelnip/codependentcodrbase)
+[![Actions Status](https://github.com/pzelnip/codependentcodrbase/workflows/Build%20And%20Push%20Image/badge.svg)](https://github.com/pzelnip/codependentcodrbase/actions)
 
 This is the base Docker image that I use for my blog.
 
@@ -16,7 +16,6 @@ that installing git, curl, npm, etc on every build when I posted
 a new blog post really made for some long builds.
 
 Those packages almost never change, so I pulled that stuff out
-into the Dockerfile you find here in this repo.  This gets built
-nightly by Travis, and pushed to Dockerhub.  I then use that
+into the Dockerfile you find here in this repo.  I then use that
 built image as the base image for CDC builds, which speeds up
 my build times for that repo.
