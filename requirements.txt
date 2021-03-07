@@ -6,4 +6,4 @@ Markdown==3.0.1
 pelican==4.5.4
 pydocstyle==3.0.0
 pylint==2.7.2
-safety==1.8.7
+safety==1.10.3
