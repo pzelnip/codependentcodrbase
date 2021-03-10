@@ -1,6 +1,8 @@
 # Codependent Codr Base Image
 
 [![Actions Status](https://github.com/pzelnip/codependentcodrbase/workflows/Build%20And%20Push%20Image/badge.svg)](https://github.com/pzelnip/codependentcodrbase/actions)
+[![Updates](https://pyup.io/repos/github/pzelnip/codependentcodrbase/shield.svg)](https://pyup.io/repos/github/pzelnip/codependentcodrbase/)
+[![Python 3](https://pyup.io/repos/github/pzelnip/codependentcodrbase/python-3-shield.svg)](https://pyup.io/repos/github/pzelnip/codependentcodrbase/)
 
 This is the base Docker image that I use for my blog.
 
