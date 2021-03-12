@@ -46,11 +46,3 @@ jobs:
           tags: |
             pzelnip/codependentcodrbase:latest
             pzelnip/codependentcodrbase:${{ github.sha }}
-
-
-    # Runs a single command using the runners shell
-    # - name: Build And Push Image
-    #   shell: 'script -q -e -c "bash {0}"'
-    #   run: make deploy
-    #   env:
-    #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
