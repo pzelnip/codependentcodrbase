@@ -1,4 +1,4 @@
 # These are dependencies that are allowed to "float", ie not be
 # version pinned.  For pinned dependencies see requirements.txt
-awscli
+awscli==1.19.26
 boto3
