@@ -10,6 +10,9 @@ assignees:
   - pzelnip
 
 requirements:
-  requirements/requirements-float.txt:
-    update: False
-    pin: False
+  - requirements/requirements-float.txt:
+      update: False
+      pin: False
+  - requirements.txt:
+      update: all
+      pin: True
