@@ -15,8 +15,7 @@ jobs:
     - uses: actions/checkout@v2
 
     # Do safety check using the most recent version of the image
-    - name: Run Safety on Requirements.txt
-      run: cat requirements.txt | docker run -i --rm pyupio/safety safety check --stdin
-
-    - name: Run Safety on Requirements-float.txt
-      run: cat requirements-float.txt | docker run -i --rm pyupio/safety safety check --stdin
+    - name: Run Safety on Requirements.txt & requirements-float.txt
+      run: |
+        cat requirements.txt | docker run -i --rm pyupio/safety safety check --stdin
+        cat requirements-float.txt | docker run -i --rm pyupio/safety safety check --stdin
