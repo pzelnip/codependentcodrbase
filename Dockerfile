@@ -10,24 +10,12 @@ FROM alpine:latest
 # image for CDC builds
 
 RUN apk add --no-cache --update \
-    python3 nodejs-current-npm make git curl
+    python3 make git curl
 
-RUN python3 -m ensurepip
-RUN pip3 install --upgrade pip
+RUN python3 -m ensurepip && python3 -m pip install --upgrade pip --no-cache-dir
 
-RUN npm install -g markdownlint-cli
-
-# needed for Pylint 2.0.0
 COPY requirements.txt /build/requirements.txt
 COPY requirements-float.txt /build/requirements-float.txt
 
-# Note that these 3 commands have to be combined to save on built
-# image size.  If we separate into multiple Docker commands then
-# doing the del after the fact has no effect because Docker *layers*
-# the filesystem.  See: https://github.com/gliderlabs/docker-alpine/issues/45
-# With this all as one command I found I saved over 100MB on the final
-# built image.
-RUN apk add --no-cache --update python3-dev gcc build-base && \
-    pip3 install -r /build/requirements-float.txt && \
-    pip3 install -r /build/requirements.txt && \
-    apk del python3-dev gcc build-base
+RUN python3 -m pip install -r /build/requirements-float.txt --no-cache-dir && \
+    python3 -m pip install -r /build/requirements.txt --no-cache-dir
