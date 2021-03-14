@@ -1,4 +1,4 @@
 # These are dependencies that are allowed to "float", ie not be
 # version pinned.  For pinned dependencies see requirements.txt
 awscli==1.19.27
-boto3
+boto3==1.17.27
